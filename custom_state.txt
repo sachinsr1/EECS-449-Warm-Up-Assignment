@@ -1,0 +1,7 @@
+1. The Info_request state indicates that the user is seeking additional info or clarification, so it 
+triggers the chatbot to provide detailed explanations when users want to know more
+2. The custom chat node is InfoRequestChat, which inherits from CHat. It generates responses using a 
+different agent-role in the LLM function that emphasizes elaborating on a concept more as the job of the LLM,
+which should make the response more relevant.
+3. The chatbot will route the user query to InfoRequest based on the criteria of the query having any 
+of a set of keywords, that imply that the user would be looking for a more detailed explanation of a concept. 
