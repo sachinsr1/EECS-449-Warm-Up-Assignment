@@ -22,7 +22,7 @@ walker double_number {
     can return_message with `root entry {
         let double = self.number1 * 2;
         report {
-            "response": "The doubled value of " + self.number1 + " is " + double + "."
+            "response": "The doubled value of " + str(self.number1) + " is " + str(double) + "."
         };
     }
 }
